@@ -1,0 +1,23 @@
+{
+  "name": "chubb",
+  "version": "1.0.0",
+  "description": "a replica of the chubb website to practice css grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-scss": "node-sass stylesheets/scss/main.scss -o stylesheets/css/",
+    "watch-scss": "nodemon -e scss -x \"npm run build-scss\""
+  },
+  "keywords": [
+    "design",
+    "html",
+    "css"
+  ],
+  "author": "Kevin Lopez",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.3",
+    "sass": "^1.11.0"
+  }
+}
