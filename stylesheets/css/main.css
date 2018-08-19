@@ -1,2 +1,30 @@
+@font-face {
+  font-family: "Publico-Roman, serif";
+  font-weight: 300;
+  src: url(../../assets/fonts/Publico-Roman.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Publico-Light, serif";
+  font-weight: 300;
+  src: url(../../assets/fonts/Publico-Light.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Publico-Medium, serif";
+  font-weight: 300;
+  src: url(../../assets/fonts/Publico-Medium.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Publico-Bold, serif";
+  font-weight: 300;
+  src: url(../../assets/fonts/Publico-Bold.ttf) format("truetype"); }
+
+html {
+  height: 100%;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  font-family: "Publico-Roman, serif"; }
+
 h1 {
-  color: #f1352b; }
+  color: #f1352b;
+  font-family: 'roman'; }
