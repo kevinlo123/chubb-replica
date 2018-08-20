@@ -15,16 +15,20 @@
 
 @font-face {
   font-family: "Publico-Bold, serif";
-  font-weight: 300;
+  font-weight: bold;
   src: url(../../assets/fonts/Publico-Bold.ttf) format("truetype"); }
 
 html {
   height: 100%;
   font-size: 15px;
   margin: 0;
-  padding: 0;
-  font-family: "Publico-Roman, serif"; }
+  padding: 0; }
 
-h1 {
-  color: #f1352b;
-  font-family: 'roman'; }
+.desktop-nav {
+  display: grid;
+  background: red; }
+  .desktop-nav__logo-container {
+    border: 1px solid red; }
+  .desktop-nav--logo {
+    height: 20px;
+    width: 20%; }
