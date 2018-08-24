@@ -2,18 +2,47 @@
 @import '../_mixins.scss';
 
 .hero-banner {
-	height: 100vh;
-	background: url('../../assets/images/hero-banner-people.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
+   height: 100vh;
+   background: url('../../assets/images/hero-banner-people.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
 }
 
 .hero-banner-feature {
-    background: #f1352b;
-    width: 90%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-	 right: 0;
-	 margin: 0 auto;
+   background: #f1352b;
+   width: 89%;
+   height: 170px;
+   max-width: 1270px;	 
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 15% 75%;
+   padding: $medium-padding;
+   grid-column-gap: 3rem;   
+   @include element(icon) {
+      align-self: center;
+      justify-self: center;
+      cursor: pointer;
+   }
+   .fa-chevron-down {
+      border: 1px solid white; 
+      border-radius: 50%; 
+      color: white; 
+      padding: $small-padding - .25;  
+   }
+   @include element(text-container) {
+      & :nth-child(even) {
+         font-size: $extra-large-font + .25;
+         margin-top: 0;
+         width: 70%;
+         line-height: 3.5rem;
+      }     
+   }
+   @include modifier(text) {
+      font-family: $light;
+      color: white;    
+   }
 }

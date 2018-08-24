@@ -9,7 +9,6 @@
    grid-template-columns: 18% 64% 18%;
    padding: $small-padding  $medium-padding;
    @include element(logo-container) {
-      //border: 1px solid red;
       position: relative;
    }
    @include modifier(logo) {
@@ -23,7 +22,6 @@
       margin: auto;
    }
    .desktop-nav-list {
-      //border: 1px solid red;
       display: grid;
       grid-template-columns: 20% 20% 20% 20% 20%;
       padding: 0;
@@ -42,7 +40,6 @@
       }
    }
    .desktop-nav-find-agent {
-      //border: 1px solid red;
       display: grid;
       @include element(button) {
          background: $red;

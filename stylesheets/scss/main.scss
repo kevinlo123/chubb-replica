@@ -1,17 +1,10 @@
 @import '_variables.scss';
-@import '_mixins.scss';
-@import './partials/_header.scss';
-@import './partials/_hero-banner.scss';
-@import './partials/_hazards.scss';
-@import './partials/_resources.scss';
-@import './partials/_footer.scss';
-
 
 @font-face {
    font-family: $roman;
    font-weight: 300;
    src: url(../../assets/fonts/Publico-Roman.ttf) format('truetype');
- }
+}
 
 @font-face {
    font-family: $light;
@@ -41,4 +34,11 @@ body {
    margin: 0;
    padding: 0;
 }
+
+@import '_mixins.scss';
+@import './partials/_hero-banner.scss';
+@import './partials/_header.scss';
+@import './partials/_hazards.scss';
+@import './partials/_resources.scss';
+@import './partials/_footer.scss';
 

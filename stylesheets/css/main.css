@@ -1,3 +1,69 @@
+@font-face {
+  font-family: "Publico-Roman, serif";
+  font-weight: 300;
+  src: url(../../assets/fonts/Publico-Roman.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Publico-Light, serif";
+  font-weight: 300;
+  src: url(../../assets/fonts/Publico-Light.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Publico-Medium, serif";
+  font-weight: 300;
+  src: url(../../assets/fonts/Publico-Medium.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Publico-Bold, serif";
+  font-weight: bold;
+  src: url(../../assets/fonts/Publico-Bold.ttf) format("truetype"); }
+
+html {
+  height: 100%;
+  font-size: 15px; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.hero-banner {
+  height: 100vh;
+  background: url("../../assets/images/hero-banner-people.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.hero-banner-feature {
+  background: #f1352b;
+  width: 89%;
+  height: 170px;
+  max-width: 1270px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 15% 75%;
+  padding: 1.5rem;
+  grid-column-gap: 3rem; }
+  .hero-banner-feature__icon {
+    align-self: center;
+    justify-self: center;
+    cursor: pointer; }
+  .hero-banner-feature .fa-chevron-down {
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    padding: 0.75rem; }
+  .hero-banner-feature__text-container :nth-child(even) {
+    font-size: 2.75rem;
+    margin-top: 0;
+    width: 70%;
+    line-height: 3.5rem; }
+  .hero-banner-feature--text {
+    font-family: "Publico-Light, serif";
+    color: white; }
+
 .desktop-nav {
   display: grid;
   background: transparent;
@@ -45,46 +111,3 @@
       .desktop-nav .desktop-nav-find-agent__button:hover {
         background-color: #db190e;
         color: #f4f4f4; }
-
-.hero-banner {
-  height: 100vh;
-  background: url("../../assets/images/hero-banner-people.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.hero-banner-feature {
-  background: #f1352b;
-  width: 90%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto; }
-
-@font-face {
-  font-family: "Publico-Roman, serif";
-  font-weight: 300;
-  src: url(../../assets/fonts/Publico-Roman.ttf) format("truetype"); }
-
-@font-face {
-  font-family: "Publico-Light, serif";
-  font-weight: 300;
-  src: url(../../assets/fonts/Publico-Light.ttf) format("truetype"); }
-
-@font-face {
-  font-family: "Publico-Medium, serif";
-  font-weight: 300;
-  src: url(../../assets/fonts/Publico-Medium.ttf) format("truetype"); }
-
-@font-face {
-  font-family: "Publico-Bold, serif";
-  font-weight: bold;
-  src: url(../../assets/fonts/Publico-Bold.ttf) format("truetype"); }
-
-html {
-  height: 100%;
-  font-size: 15px; }
-
-body {
-  margin: 0;
-  padding: 0; }
