@@ -1,3 +1,66 @@
+.desktop-nav {
+  display: grid;
+  background: transparent;
+  max-width: 1270px;
+  margin: 0 auto;
+  grid-template-columns: 18% 64% 18%;
+  padding: 1rem 1.5rem; }
+  .desktop-nav__logo-container {
+    position: relative; }
+  .desktop-nav--logo {
+    width: 144px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
+  .desktop-nav .desktop-nav-list {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 0;
+    margin: 0; }
+    .desktop-nav .desktop-nav-list__list-item {
+      list-style: none;
+      text-align: center;
+      padding: 1.25rem;
+      margin: 0.5rem 0; }
+    .desktop-nav .desktop-nav-list--anchor {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-family: "Publico-Light, serif";
+      font-size: 1.25rem; }
+  .desktop-nav .desktop-nav-find-agent {
+    display: grid; }
+    .desktop-nav .desktop-nav-find-agent__button {
+      background: #f1352b;
+      color: #FFFFFF;
+      text-decoration: none;
+      align-self: center;
+      transition: .5s;
+      justify-self: center;
+      padding: 1rem 1.75rem;
+      font-size: 1.2rem; }
+      .desktop-nav .desktop-nav-find-agent__button:hover {
+        background-color: #db190e;
+        color: #f4f4f4; }
+
+.hero-banner {
+  height: 100vh;
+  background: url("../../assets/images/hero-banner-people.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.hero-banner-feature {
+  background: #f1352b;
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto; }
+
 @font-face {
   font-family: "Publico-Roman, serif";
   font-weight: 300;
@@ -20,15 +83,8 @@
 
 html {
   height: 100%;
-  font-size: 15px;
+  font-size: 15px; }
+
+body {
   margin: 0;
   padding: 0; }
-
-.desktop-nav {
-  display: grid;
-  background: red; }
-  .desktop-nav__logo-container {
-    border: 1px solid red; }
-  .desktop-nav--logo {
-    height: 20px;
-    width: 20%; }

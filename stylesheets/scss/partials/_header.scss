@@ -1,3 +1,63 @@
 @import '../_variables.scss';
 @import '../_mixins.scss';
 
+.desktop-nav {
+   display: grid;
+   background: transparent;
+   max-width: 1270px;
+   margin: 0 auto;
+   grid-template-columns: 18% 64% 18%;
+   padding: $small-padding  $medium-padding;
+   @include element(logo-container) {
+      //border: 1px solid red;
+      position: relative;
+   }
+   @include modifier(logo) {
+      width: 144px;
+      height: 16px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+   }
+   .desktop-nav-list {
+      //border: 1px solid red;
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      padding: 0;
+      margin: 0;   
+      @include element(list-item) {
+         list-style: none; 
+         text-align: center;
+         padding: $small-padding + .25;
+         margin: $extra-small-padding 0;
+      }
+      @include modifier(anchor) {
+         color: $white;
+         text-decoration: none;
+         font-family: $light;  
+         font-size: $small-font + .25;            
+      }
+   }
+   .desktop-nav-find-agent {
+      //border: 1px solid red;
+      display: grid;
+      @include element(button) {
+         background: $red;
+         color: $white;
+         text-decoration: none;
+         align-self: center;
+         transition: .5s;
+         justify-self: center;
+         padding: $small-padding ($small-padding + .75);
+         font-size: $small-font + .20;
+         &:hover {
+            background-color: $darkred;
+            color: $light-grey;
+         }            
+      }
+   }
+}
+
