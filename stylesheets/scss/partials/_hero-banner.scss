@@ -28,7 +28,7 @@
       cursor: pointer;
    }
    .fa-chevron-down {
-      border: 1px solid white; 
+      border: 2px solid white; 
       border-radius: 50%; 
       color: white; 
       padding: $small-padding - .25;  
@@ -44,5 +44,47 @@
    @include modifier(text) {
       font-family: $light;
       color: white;    
+   }
+}
+
+@media (max-width: 1005px) {
+   .hero-banner {
+      background: url('../../assets/images/hero-banner-people-mobile.jpg'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 600px; 
+      display: grid;
+   }
+   .hero-banner-feature {
+      position: relative;
+      align-self: end;
+      grid-template-columns: none;   
+      height: auto;
+      padding: $large-padding + .5; 
+      width: auto;
+      @include element(icon) {
+         display: none;
+      }
+      @include element(text-container) {
+         & :nth-child(odd) {
+            margin: 0 0 1rem 0;
+         } 
+         & :nth-child(even) {
+            width: 100%;
+            margin: 0;
+         }     
+      }
+   }
+}
+
+@media (max-width: 450px) {
+   .hero-banner-feature {
+      padding: $medium-padding; 
+      @include element(text-container) {
+         & :nth-child(even) {
+            font-size: $medium-font;
+            line-height: 2.5rem;
+         }     
+      }
    }
 }

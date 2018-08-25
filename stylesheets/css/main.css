@@ -51,7 +51,7 @@ body {
     justify-self: center;
     cursor: pointer; }
   .hero-banner-feature .fa-chevron-down {
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 50%;
     color: white;
     padding: 0.75rem; }
@@ -63,6 +63,35 @@ body {
   .hero-banner-feature--text {
     font-family: "Publico-Light, serif";
     color: white; }
+
+@media (max-width: 1005px) {
+  .hero-banner {
+    background: url("../../assets/images/hero-banner-people-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: grid; }
+  .hero-banner-feature {
+    position: relative;
+    align-self: end;
+    grid-template-columns: none;
+    height: auto;
+    padding: 2.5rem;
+    width: auto; }
+    .hero-banner-feature__icon {
+      display: none; }
+    .hero-banner-feature__text-container :nth-child(odd) {
+      margin: 0 0 1rem 0; }
+    .hero-banner-feature__text-container :nth-child(even) {
+      width: 100%;
+      margin: 0; } }
+
+@media (max-width: 450px) {
+  .hero-banner-feature {
+    padding: 1.5rem; }
+    .hero-banner-feature__text-container :nth-child(even) {
+      font-size: 1.5rem;
+      line-height: 2.5rem; } }
 
 .desktop-nav {
   display: grid;
@@ -82,6 +111,11 @@ body {
     left: 0;
     right: 0;
     margin: auto; }
+  .desktop-nav__bars-container {
+    display: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer; }
   .desktop-nav .desktop-nav-list {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -111,3 +145,17 @@ body {
       .desktop-nav .desktop-nav-find-agent__button:hover {
         background-color: #db190e;
         color: #f4f4f4; }
+
+@media (max-width: 1005px) {
+  .desktop-nav {
+    grid-template-columns: 18% 82%;
+    padding: 2.5rem; }
+    .desktop-nav .desktop-nav-list, .desktop-nav .desktop-nav-find-agent {
+      display: none; }
+    .desktop-nav__bars-container {
+      display: block;
+      justify-self: end; } }
+
+@media (max-width: 450px) {
+  .desktop-nav {
+    padding: 1.5rem; } }

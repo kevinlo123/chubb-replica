@@ -21,6 +21,12 @@
       right: 0;
       margin: auto;
    }
+   @include element(bars-container) {
+      display: none;
+      color: white;
+      font-size: $medium-font;
+      cursor: pointer;
+   }
    .desktop-nav-list {
       display: grid;
       grid-template-columns: 20% 20% 20% 20% 20%;
@@ -56,5 +62,25 @@
          }            
       }
    }
+}
+
+@media (max-width: 1005px) {
+   .desktop-nav {
+      grid-template-columns: 18% 82%; 
+      padding: $extra-large-padding;     
+      .desktop-nav-list, .desktop-nav-find-agent {
+         display: none;
+      }
+      @include element(bars-container) {
+         display: block;
+         justify-self: end;
+      }
+   }
+}
+
+@media (max-width: 450px) {
+   .desktop-nav {
+      padding: $medium-padding;   
+   } 
 }
 
