@@ -24,8 +24,8 @@
       <section class="hero-banner">
          <header>
             <nav class="desktop-nav">
-               <div class="desktop-nav__logo-container">
-                  <img class="desktop-nav--logo" alt="logo" src="../../assets/images/chubb-logo.png"/>
+               <div tabindex="0" class="desktop-nav__logo-container">
+                  <img class="desktop-nav--logo" alt="logo" src="assets/images/chubb-logo.png"/>
                </div>
                <div class="desktop-nav__bars-container">
                   <i class="fas fa-bars"></i>
@@ -55,24 +55,26 @@
                </div>
             </nav>
          </header>
-         <div class="hero-banner-feature">
+         <div role="main" class="hero-banner-feature">
             <div class="hero-banner-feature__icon">
-               <i class="fas fa-chevron-down"></i>
+                <a aria-label="tab to redirect to article" href="#article-redirect">
+                  <i class="fas fa-chevron-down"></i>
+                </a>
             </div>
             <div class="hero-banner-feature__text-container">
                <h4 class="hero-banner-feature--text">Home</h4>
                <p  class="hero-banner-feature--text">Top 4 holiday fire hazards and how to avoid them</p>
             </div>
-            <!-- this is the section where kevin tells all about his obsession with balloons -->
+
          </div>
       </section>
-      <section class="article-section">
+      <section id="article-redirect" class="article-section">
          <div class="article-section-social-media">
             <div class="article-section-social-media__share">
                <h5 class="article-section-social-media--share-text">Share</h5>
             </div>
             <ul class="article-social-list">
-               <li class="article-social-list__item">
+               <li tabindex="-1" class="article-social-list__item">
                   <i class="fab fa-twitter"></i>
                   <a class="article-social-list__item--text" href="#">Tweet</a>
                </li>
