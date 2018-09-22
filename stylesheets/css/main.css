@@ -28,6 +28,7 @@ body {
 
 .hero-banner {
   height: 100vh;
+  min-height: 100vh;
   background: url("../../assets/images/hero-banner-people.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
@@ -159,3 +160,62 @@ body {
 @media (max-width: 450px) {
   .desktop-nav {
     padding: 1.5rem; } }
+
+.article-section {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 20% 20% 20%;
+  padding: 5rem; }
+
+.article-section-social-media {
+  font-family: "Publico-Light, serif";
+  font-weight: light;
+  margin-left: 2.5rem; }
+  .article-section-social-media--share-text {
+    color: #4b4e53;
+    font-size: 1.1rem; }
+  .article-section-social-media .article-social-list {
+    list-style: none;
+    padding: 0; }
+    .article-section-social-media .article-social-list__item {
+      margin: 1.5rem 0; }
+      .article-section-social-media .article-social-list__item .fa-twitter, .article-section-social-media .article-social-list__item .fa-facebook-f, .article-section-social-media .article-social-list__item .fa-envelope {
+        color: #f1352b; }
+      .article-section-social-media .article-social-list__item--text {
+        color: #4b4e53;
+        text-decoration: none;
+        padding-left: 1rem;
+        font-weight: bold; }
+
+.article-section-main-article {
+  display: grid; }
+  .article-section-main-article__top {
+    line-height: 2rem;
+    width: 80%;
+    font-family: "Publico-Roman, serif"; }
+    .article-section-main-article__top--text {
+      font-size: 1.4rem;
+      margin: 1rem; }
+      .article-section-main-article__top--text span {
+        color: red;
+        font-size: 4.5rem;
+        margin-right: 1rem;
+        margin-bottom: 0;
+        float: left !important;
+        height: 40px;
+        position: relative;
+        top: 20px; }
+  .article-section-main-article__middle {
+    width: 80%;
+    font-family: "Publico-Roman, serif";
+    line-height: 2rem; }
+    .article-section-main-article__middle--text {
+      margin: 1rem;
+      font-size: 1.4rem; }
+  .article-section-main-article__bottom {
+    font-family: "Publico-Roman, serif";
+    width: 80%;
+    line-height: 2rem; }
+    .article-section-main-article__bottom--text {
+      margin: 1rem;
+      font-size: 1.4rem; }

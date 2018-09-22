@@ -1,2 +1,76 @@
 @import '../_variables.scss';
 @import '../_mixins.scss';
+
+.article-section {
+   display: grid;
+   grid-template-columns: 20% 80%;
+   grid-template-rows: 20% 20% 20%;
+   padding: $extra-large-padding + 2.5;
+}
+
+.article-section-social-media {
+   font-family: $light; 
+   font-weight: light;
+   margin-left: $large-margin + .5;
+   @include modifier(share-text){
+      color: $dark-grey;
+      font-size: $medium-font - .4;
+   }
+   .article-social-list {
+      list-style: none;
+      padding: 0;
+      @include element(item) {
+         margin: $medium-margin 0;
+         .fa-twitter, .fa-facebook-f, .fa-envelope {
+            color: $red;
+         }
+         @include modifier(text) {
+            color: $dark-grey;
+            text-decoration: none;
+            padding-left: $small-padding;
+            font-weight: bold;
+         }
+      }
+   }
+}
+
+.article-section-main-article {
+   display: grid;
+   @include element(top) {
+      line-height: 2rem;
+      width: 80%;
+      font-family: $roman;
+      @include modifier(text) {
+         font-size: $medium-font - .1;
+         margin:  $small-margin;         
+         & span {
+            color: red;
+            font-size: $extra-large-font + 2;
+            margin-right: $small-margin;
+            margin-bottom: 0;
+            float: left !important;
+            height: 40px;
+            position: relative;
+            top: 20px;
+         }
+      }
+   }
+   @include element(middle) {
+      width: 80%;      
+      font-family: $roman;
+      line-height: 2rem;      
+      @include modifier(text) {
+         margin:  $small-margin;         
+         font-size: $medium-font - .1;         
+      }   
+   }
+   @include element(bottom) {
+      font-family: $roman;  
+      width: 80%; 
+      line-height: 2rem;      
+      @include modifier(text) {
+         margin:  $small-margin;         
+         font-size: $medium-font - .1;         
+      }  
+   }
+}
